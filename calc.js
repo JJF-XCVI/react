@@ -4,7 +4,7 @@
    toinenluku = 7;
    const nimi = "Liisa"
    function laskeNelio(a, b) {
-      return a * b;
+      return a + b;
    }
    const laskenelioNuolella = (a, b) => a + b;
 
