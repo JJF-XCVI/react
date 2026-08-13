@@ -3,6 +3,12 @@ const tuotteet = [
     { nimi: "Tee", hinta: 3 },
     { nimi: "Kaakao", hinta: 3.5 }
 ];
-const nimet = tuotteet.map ((t) => t.nimi);
-const kalliit = tuotteet.filter((t) => t.hinta > 3.2);
-const yhteensa = tuotteet.reduce((summa, t) => t.hinta, 0);
+//1.1 on yhtä kuin 10% hinnan nousua
+const nimet = tuotteet.map ((t) => ({nimi: t.nimi, hinta: t.hinta * 1.1}));
+//Hakee kaikki missä on K kirjain t.nimi.includes('K')
+const kalliit = tuotteet.filter((t) => t.nimi.includes('K'));
+//
+const yhteensa = tuotteet.reduce((max,t)=> {return t.hinta > max ? t.hinta : max;});
+console.log(nimet);
+console.log(kalliit);
+console.log(Math.max(yhteensa));
