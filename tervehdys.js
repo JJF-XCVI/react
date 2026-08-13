@@ -2,6 +2,6 @@ export function tervehdi(nimi) {
     return `Hei, ${nimi}`
 }
 
-export function tervehdys(nimi) {
+export function terve(nimi) {
     return `Hei, ${nimi}`
 }
