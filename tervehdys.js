@@ -1,5 +1,5 @@
 export function tervehdi(nimi) {
-    return `Hei ${nimi}`
+    return `"Hei ${nimi}`
 }
 
 export function terve(nimi) {
