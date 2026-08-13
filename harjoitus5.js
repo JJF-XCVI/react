@@ -10,7 +10,7 @@ async function laskeViivella(a,b) {
 
 async function main() {
     const viesti = await laskeViivella(5,10);
-    console.log(viesti)
+    console.log("Tulos on:" + viesti)
 }
 
 main();
